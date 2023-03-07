@@ -24,8 +24,7 @@ require (
 	go.uber.org/thriftrw v1.25.0
 	go.uber.org/yarpc v1.55.0
 	go.uber.org/zap v1.13.0
-	golang.org/x/net v0.0.0-20220121210141-e204ce36a2ba
-	golang.org/x/sys v0.0.0-20220403205710-6acee93ad0eb // indirect
+	golang.org/x/net v0.7.0
 	golang.org/x/time v0.0.0-20170927054726-6dc17368e09b
 	honnef.co/go/tools v0.3.2 // indirect
 )
