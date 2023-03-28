@@ -3,7 +3,7 @@ module go.uber.org/cadence
 go 1.20
 
 require (
-	github.com/apache/thrift v0.13.0
+	github.com/apache/thrift v0.18.1
 	github.com/cristalhq/jwt/v3 v3.1.0
 	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a
 	github.com/gogo/protobuf v1.3.2

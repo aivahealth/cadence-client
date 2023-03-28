@@ -45,7 +45,7 @@ func TListSerialize(ts []thrift.TStruct) (b []byte, err error) {
 	// recommend writing length.
 
 	for _, v := range ts {
-		if e := v.Write(t.Protocol); e != nil {
+		if e := v.Write(context.Background(), t.Protocol); e != nil {
 			err = thrift.PrependError("error writing TStruct: ", e)
 			return
 		}
@@ -65,7 +65,7 @@ func TListSerialize(ts []thrift.TStruct) (b []byte, err error) {
 
 // TDeserialize is used to deserialize []byte to thrift TStruct
 func TDeserialize(t thrift.TStruct, b []byte) (err error) {
-	return thrift.NewTDeserializer().Read(t, b)
+	return thrift.NewTDeserializer().Read(context.Background(), t, b)
 }
 
 // TListDeserialize is used to deserialize []byte to list of thrift TStruct
@@ -77,7 +77,7 @@ func TListDeserialize(ts []thrift.TStruct, b []byte) (err error) {
 	}
 
 	for i := 0; i < len(ts); i++ {
-		if e := ts[i].Read(t.Protocol); e != nil {
+		if e := ts[i].Read(context.Background(), t.Protocol); e != nil {
 			err = thrift.PrependError("error reading TStruct: ", e)
 			return
 		}
