@@ -1,9 +1,9 @@
 module go.uber.org/cadence
 
-go 1.13
+go 1.20
 
 require (
-	github.com/apache/thrift v0.0.0-20161221203622-b2a4d4ae21c7
+	github.com/apache/thrift v0.13.0
 	github.com/cristalhq/jwt/v3 v3.1.0
 	github.com/facebookgo/clock v0.0.0-20150410010913-600d898af40a
 	github.com/gogo/protobuf v1.3.2
@@ -18,7 +18,6 @@ require (
 	github.com/uber/jaeger-client-go v2.22.1+incompatible
 	github.com/uber/tchannel-go v1.16.0
 	go.uber.org/atomic v1.7.0
-	go.uber.org/fx v1.13.1 // indirect
 	go.uber.org/goleak v1.0.0
 	go.uber.org/multierr v1.6.0
 	go.uber.org/thriftrw v1.25.0
@@ -28,4 +27,38 @@ require (
 	golang.org/x/net v0.0.0-20201021035429-f5854403a974
 	golang.org/x/time v0.0.0-20170927054726-6dc17368e09b
 	honnef.co/go/tools v0.0.1-2019.2.3
+)
+
+require (
+	github.com/BurntSushi/toml v0.3.1 // indirect
+	github.com/anmitsu/go-shlex v0.0.0-20161002113705-648efa622239 // indirect
+	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/cespare/xxhash/v2 v2.1.1 // indirect
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/fatih/structtag v1.2.0 // indirect
+	github.com/gogo/googleapis v1.3.2 // indirect
+	github.com/gogo/status v1.1.0 // indirect
+	github.com/golang/protobuf v1.3.3 // indirect
+	github.com/jessevdk/go-flags v1.4.0 // indirect
+	github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/prometheus/client_golang v1.4.1 // indirect
+	github.com/prometheus/client_model v0.2.0 // indirect
+	github.com/prometheus/common v0.9.1 // indirect
+	github.com/prometheus/procfs v0.0.9 // indirect
+	github.com/stretchr/objx v0.2.0 // indirect
+	github.com/uber-go/mapdecode v1.0.0 // indirect
+	github.com/uber/jaeger-lib v2.2.0+incompatible // indirect
+	go.uber.org/dig v1.10.0 // indirect
+	go.uber.org/fx v1.13.1 // indirect
+	go.uber.org/net/metrics v1.3.0 // indirect
+	golang.org/x/mod v0.3.0 // indirect
+	golang.org/x/sys v0.0.0-20200930185726-fdedc70b468f // indirect
+	golang.org/x/text v0.3.3 // indirect
+	golang.org/x/tools v0.0.0-20210106214847-113979e3529a // indirect
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	google.golang.org/genproto v0.0.0-20200212174721-66ed5ce911ce // indirect
+	google.golang.org/grpc v1.28.0 // indirect
+	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
